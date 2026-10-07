@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólió – Adrián</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="language-switch">
+    <button onclick="setLang('hu')">HU</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo"
+        data-hu="Adrián"
+        data-en="Adrian"></div>
+
+      <ul>
+        <li><a href="#about" data-hu="Rólam" data-en="About"></a></li>
+        <li><a href="#work" data-hu="Munkáim" data-en="Work"></a></li>
+        <li><a href="#skills" data-hu="Készségek" data-en="Skills"></a></li>
+        <li><a href="#contact" data-hu="Kapcsolat" data-en="Contact"></a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1 data-hu="Portfólió" data-en="Portfolio"></h1>
+      <p data-hu="Designer / fejlesztő / kreatív alkotó."
+         data-en="Designer / developer / creative maker."></p>
+      <a href="#work" class="btn"
+         data-hu="Munkáim"
+         data-en="My Work"></a>
+    </div>
+  </header>
+
+
+  <section id="about" class="section">
+    <h2 data-hu="Rólam" data-en="About Me"></h2>
+    <p data-hu="Ide írhatsz magadról egy rövid bemutatkozást."
+       data-en="Write a short introduction about yourself here."></p>
+  </section>
+
+  <section id="work" class="section">
+    <h2 data-hu="Munkáim" data-en="My Work"></h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="szekrény.png" alt="">
+        <h3 data-hu="Szekrény" data-en="cupboard"></h3>
+        <p data-hu="Kis 3D szekrény modell blenderbe."
+           data-en="A small 3D cupboard model for Blender."></p>
+      </div>
+
+      <div class="card">
+        <img src="hgf.png" alt="">
+        <h3 data-hu="Python icon changer" data-en="Python icon changer"></h3>
+        <p data-hu="Python alapú eszköz, amely globálisan megváltoztatja a Windows mappák ikonjait, és biztosítja, hogy minden újonnan létrehozott mappa automatikusan az új ikont kapja. A program egységes ikonstílust alkalmaz a teljes rendszerben, frissíti a szükséges registry beállításokat, újraépíti az ikon‑cache‑t, és újraindítja az Explorer folyamatot a változások érvényesítéséhez.
+Ezen felül lehetőséget ad bármely mappa egyedi ikonjának külön módosítására is, azonban globálisan csak azokat az ikonokat képes egységesen lecserélni, amelyeket a Windows rendszer szintjén támogat.”"
+           data-en="A Python‑based tool that globally changes Windows folder icons and ensures that all newly created folders automatically use the updated icon. The application applies a unified icon style across the entire system by modifying the relevant registry keys, rebuilding the icon cache, and restarting Explorer to enforce the changes.
+Additionally, it allows custom icon replacement for any individual folder, although global icon changes are only applied to those icon types that Windows supports system‑wide.”"></p>
+      </div>
+
+      <div class="card">
+        <img src="images/projekt3.jpg" alt="">
+        <h3 data-hu="Projekt 3" data-en="Project 3"></h3>
+        <p data-hu="Rövid leírás a projektről."
+           data-en="Short description of the project."></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="section">
+    <h2 data-hu="Készségek" data-en="Skills"></h2>
+    <ul class="skills-list">
+      <li data-hu="UI/UX design" data-en="UI/UX design"></li>
+      <li data-hu="Webdesign" data-en="Webdesign"></li>
+      <li data-hu="Frontend fejlesztés" data-en="Frontend development"></li>
+      <li data-hu="Branding" data-en="Branding"></li>
+    </ul>
+  </section>
+
+
+  <section id="contact" class="section">
+    <h2 data-hu="Kapcsolat" data-en="Contact"></h2>
+    <p data-hu="Írj bátran, ha együtt szeretnél dolgozni velem."
+       data-en="Feel free to contact me if you'd like to work together."></p>
+
+    <ul class="contact-list">
+      <li><strong>Email:</strong> 4433.portfolio@gmail.com</li>
+      <li><strong>instagram:</strong> adrian44_33 </li>
+      <li><strong>Tiktok:</strong> @Itcheckhu </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Adrián</p>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
